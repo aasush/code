@@ -42,11 +42,11 @@
 
     <!-- Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged and run tests in this organization's namespace only-->
     <target name="deploy">
-      <sf:deploy username="${sf.uatusername}" password="${sf.uatpassword}" serverurl="${sf.sandboxurl}" maxPoll="${sf.maxPoll}" deployRoot="fetcheddata" checkOnly="false" rollbackOnError="true"/>
+      <sf:deploy username="${sf.dev2username}" password="${sf.dev2password}" serverurl="${sf.sandboxurl}" maxPoll="${sf.maxPoll}" deployRoot="fetcheddata" checkOnly="false" rollbackOnError="true"/>
     </target>
 	
 	   <target name="undeployCode">
-      <sf:deploy username="${sf.uatusername}" password="${sf.uatpassword}" serverurl="${sf.sandboxurl}" maxPoll="${sf.maxPoll}" deployRoot="DestructiveChanges"/>
+      <sf:deploy username="${sf.dev2username}" password="${sf.dev2password}" serverurl="${sf.sandboxurl}" maxPoll="${sf.maxPoll}" deployRoot="DestructiveChanges"/>
     </target>
 
 
