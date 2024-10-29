@@ -100,9 +100,6 @@
 	</target>
 	
     <!-- Shows removing code; only succeeds if done after deployCode -->
-    <target name="undeployCode">
-      <sf:deploy username="${sf.uatusername}" password="${sf.uatpassword}" serverurl="${sf.sandboxurl}" maxPoll="${sf.maxPoll}" deployRoot="DestructiveChanges"/>
-    </target>
 
     <!-- Shows retrieving code; only succeeds if done after deployCode -->
     <target name="retrieveCode">
